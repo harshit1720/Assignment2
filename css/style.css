@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --orange: rgba(255, 183, 3, 1);
+  --shade-text: rgba(141, 140, 140, 1);
+  --olive: rgba(187, 136, 7, 1);
+  --footer-bg: rgba(27, 27, 27, 1);
+  --white: rgb(255, 255, 255, 1);
+  --light-blue: rgba(33, 158, 188, 0.5);
+  --light-orange: rgba(251, 133, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: var(--font-poppins);
+}
+
+/* _______________________________________________ Home _______________________________________________ */
+
+#home {
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/home-images/home-bg.svg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 10%;
+}
+
+.ct-logo,
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+.ct-logo {
+  flex-basis: 60%;
+}
+.nav-content {
+  flex-basis: 25%;
+}
+
+.ct-logo img {
+  width: 13%;
+}
+
+.nav-content {
+  justify-content: space-between;
+}
+
+.search-bar,
+.login,
+.login a {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  height: 2.5rem;
+  width: 7rem;
+  display: flex;
+  column-gap: 0.5rem;
+  padding-left: 0.5rem;
+  flex-basis: 60%;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-basis: 10%;
+}
+
+.search-icon a {
+  display: flex;
+}
+
+.search-icon img {
+  width: 100%;
+}
+
+.search-tect {
+  flex-basis: 92%;
+}
+
+.search-input {
+  border: none;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.login a {
+  height: 2.5rem;
+  width: 7rem;
+  justify-content: center;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.25s linear;
+}
+
+.login a:hover {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  transform: translateY(-1px);
+}
+
+.home-content,
+.home-content-txt,
+.home-img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-content {
+  flex-basis: 75%;
+}
+
+.home-content-txt {
+  row-gap: 1rem;
+}
+
+.hc-text {
+  width: 65%;
+}
+
+.hc-btn,
+.hc-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hc-btn a {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: var(--olive);
+  color: var(--white);
+  font-size: 0.85rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.25s linear;
+}
+
+.hc-btn a:hover {
+  background-color: transparent;
+  border: 1px solid var(--olive);
+  color: var(--olive);
+  transform: translateY(-1px);
+}
+
+.hc-text p {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.home-img img {
+  width: 35%;
+}
+
+.explore-blog {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-blog p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* _______________________________________________ Industry_Technological_Innovations _______________________________________________ */
+
+#industry,
+#technological,
+#innovations {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.title {
+  width: 87%;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--light-blue);
+}
+
+.all-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 57vh;
+  flex-basis: 25%;
+  border: 0.5px solid rgb(196, 196, 196, 0.5);
+  border-radius: 9px;
+  box-shadow: 0px 2px rgb(196, 196, 196, 0.5);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.card:hover{
+    transform: scale3d(1.05,1.05,1.05);
+}
+
+.card-img,
+.card-text,
+.card-img img {
+  width: 100%;
+}
+
+.card-text p {
+  padding: 0.5rem 1rem;
+  width: 86%;
+}
+
+#innovations {
+  padding-bottom: 5rem;
+}
+
+.innovations {
+  color: var(--light-orange) !important;
+}
+
+/* _______________________________________________ Footer _______________________________________________ */
+#footer {
+  height: 8vh;
+  width: 100vw;
+  background-color: var(--footer-bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer a {
+  color: var(--white);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.tnc {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 20%;
+}
+
+.copyright {
+  flex-basis: 50%;
+  text-align: end;
+}
